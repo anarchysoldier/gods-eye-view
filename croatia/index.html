@@ -50,6 +50,7 @@
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script id="embedded-cameras" type="application/json">[]</script>
 <script>
+(async()=>{
 const map=L.map('map',{zoomControl:false}).setView([45.25,16.45],7);
 L.control.zoom({position:'bottomleft'}).addTo(map);
 // === BASEMAPS ===
@@ -185,16 +186,51 @@ async function tryJson(urls,kind,countId,label){
 
 // Local/GitHub-friendly filenames first. Drop generated files beside this HTML.
 tryJson([
- './croatia-speed-cameras.geojson','./croatia-radars.json','./data/croatia-speed-cameras.geojson','./public/data/croatia-speed-cameras.geojson'
-],'radar','nRadar','Radari');
-
-tryJson([
  './croatia-road-events.geojson','./croatia-road-events.json','./hak-road-events.json','./data/croatia-road-events.geojson'
 ],'road','nRoad','Radovi/zatvaranja');
 
 [['tCam','cam'],['tRadar','radar'],['tRoad','road']].forEach(([id,k])=>{
  document.getElementById(id).addEventListener('change',e=>e.target.checked?groups[k].addTo(map):map.removeLayer(groups[k]));
 });
-setStatus();
+await loadRadars();
+ setStatus();
+
+
+// === RADARI: data/radari.json ===
+async function loadRadars(){
+  try{
+    const r=await fetch('./data/radari.json',{cache:'no-store'});
+    if(!r.ok) throw new Error(`HTTP ${r.status}`);
+    const j=await r.json();
+    const arr=Array.isArray(j)?j:(j.radars||j.cameras||j.features||[]);
+    let count=0;
+    for(const o of arr){
+      let item=o;
+      if(o && o.type==='Feature'){
+        const c=o.geometry?.coordinates||[];
+        item={...(o.properties||{}),longitude:c[0],latitude:c[1]};
+      }
+      const lat=Number(item.latitude??item.lat);
+      const lon=Number(item.longitude??item.lon??item.lng);
+      if(Number.isFinite(lat)&&Number.isFinite(lon)){
+        addPoint(groups.radar,'radar',item,'📡');
+        count++;
+      }
+    }
+    document.getElementById('nRadar').textContent=count;
+    statusParts.push(`✓ Radari: ${count}`);
+    setStatus();
+    return count;
+  }catch(e){
+    document.getElementById('nRadar').textContent='0';
+    statusParts.push(`✕ Radari: ${e.message}`);
+    setStatus();
+    console.warn('Radari:',e);
+    return 0;
+  }
+}
+
+
+})();
 </script>
 </body></html>
