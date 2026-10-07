@@ -33,12 +33,16 @@
 .leaflet-control-layers-separator{border-top-color:#31415d!important}
 
 
-/* Fiksne ikone na karti: uvijek 8 px, neovisno o zoomu */
+/* Dinamičke ikone: sitne na prikazu cijele Hrvatske, veće pri približavanju */
+#map{--marker-size:5px}
 .marker-fixed{
- width:8px;height:8px;border-radius:50%;
+ width:var(--marker-size);height:var(--marker-size);border-radius:50%;
  border:1px solid rgba(255,255,255,.9);
  box-shadow:0 1px 4px rgba(0,0,0,.7);
  box-sizing:border-box;
+ position:absolute;left:50%;top:50%;
+ transform:translate(-50%,-50%);
+ transition:width .12s ease,height .12s ease;
 }
 .marker-fixed.cam{background:#29a8df}
 .marker-fixed.radar{background:#ef5b68}
@@ -112,13 +116,32 @@ L.control.layers(baseMaps, null, {
 
 const groups={cam:L.layerGroup().addTo(map),radar:L.layerGroup().addTo(map),road:L.layerGroup().addTo(map)};
 const statusParts=[];
+
+// Veličina markera ovisno o zoomu:
+// cijela Hrvatska = sitno, grad/ulica = znatno krupnije.
+function updateMarkerSize(){
+ const z=map.getZoom();
+ let px;
+ if(z<=7) px=5;
+ else if(z===8) px=6;
+ else if(z===9) px=7;
+ else if(z===10) px=8;
+ else if(z===11) px=9;
+ else if(z===12) px=10;
+ else if(z===13) px=12;
+ else px=14;
+ document.getElementById('map').style.setProperty('--marker-size',px+'px');
+}
+updateMarkerSize();
+map.on('zoom zoomend',updateMarkerSize);
+
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const icon=(kind,emoji)=>L.divIcon({
  className:'',
  html:`<div class="marker-fixed ${kind}" title="${emoji}"></div>`,
- iconSize:[10,10],
- iconAnchor:[5,5],
- popupAnchor:[0,-7]
+ iconSize:[18,18],
+ iconAnchor:[9,9],
+ popupAnchor:[0,-10]
 });
 const icons={cam:icon('cam','📷'),radar:icon('radar','📡'),road:icon('road','🚧')};
 function coord(o){
