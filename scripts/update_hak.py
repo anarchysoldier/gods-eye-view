@@ -64,7 +64,7 @@ def convert(data):
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument('--output', default='data/hak-promet.geojson')
+    parser.add_argument('--output', default='croatia/data/hak-promet.geojson')
     args = parser.parse_args()
     result = convert(fetch())
     dest = Path(args.output)
