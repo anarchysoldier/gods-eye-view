@@ -68,30 +68,24 @@ def clean_name(s):
     return s[:180] or "Kamera za nadzor brzine"
 
 def add(lat,lon,ctx,source):
-    try: lat=float(str(lat).replace(",",".")); lon=float(str(lon).replace(",","."))
-    except: return
-    if not (42.0<=lat<=47.0 and 13.0<=lon<=20.0): return
+    try:
+        lat=float(str(lat).replace(",","."))
+        lon=float(str(lon).replace(",","."))
+    except:
+        return
+    if not (42.0<=lat<=47.0 and 13.0<=lon<=20.0):
+        return
 
-    name=""
-    patterns=[
-      r'(?:title|name|naziv|lokacija|location)\s*["\']?\s*[:=]\s*["\']([^"\']{2,180})',
-      r'<(?:b|strong)[^>]*>([^<]{2,180})</(?:b|strong)>',
-    ]
-    for p in patterns:
-        m=re.search(p,ctx,re.I)
-        if m: name=clean_name(m.group(1)); break
-    speed=None
-    m=re.search(r'(?:speed|brzina|ograni[cč]enje|limit)\D{0,25}(\d{2,3})',ctx,re.I)
-    if m:
-        v=int(m.group(1))
-        if 20<=v<=200: speed=v
-    direction=""
-    m=re.search(r'(?:direction|smjer)\s*["\']?\s*[:=]\s*["\']([^"\']{1,100})',ctx,re.I)
-    if m: direction=clean_name(m.group(1))
+    # IMPORTANT:
+    # Do not infer name/speed/direction from surrounding HTML/JS text.
+    # The source bundles many camera records together, so proximity in the
+    # document does not prove that metadata belongs to this coordinate.
     found.append({
-      "name":name or "Kamera za nadzor brzine",
-      "latitude":lat,"longitude":lon,
-      "speed_limit":speed,"direction":direction,
+      "name":"Kamera za nadzor brzine",
+      "latitude":lat,
+      "longitude":lon,
+      "speed_limit":None,
+      "direction":"",
       "source":source
     })
 
@@ -111,14 +105,13 @@ for url,ct,t in docs:
     for m in re.finditer(r'(?<![\d.])(4[2-7]\.\d{4,})\s*[,;]\s*(1[3-9]\.\d{4,})(?![\d.])',t):
         a,b=m.span(); add(m.group(1),m.group(2),t[max(0,a-500):min(len(t),b+700)],url)
 
-# Deduplicate by coordinate; prefer richer records.
+# Deduplicate strictly by coordinate.
 best={}
 for x in found:
     k=(round(x["latitude"],6),round(x["longitude"],6))
-    score=(x["name"]!="Kamera za nadzor brzine")*3+(x["speed_limit"] is not None)*2+bool(x["direction"])
-    if k not in best or score>best[k][0]:
-        best[k]=(score,x)
-radars=[v[1] for v in best.values()]
+    if k not in best:
+        best[k]=x
+radars=list(best.values())
 radars.sort(key=lambda x:(x["latitude"],x["longitude"]))
 
 # Save diagnostics as well; if extraction fails, Actions log shows every fetched endpoint.
@@ -136,6 +129,7 @@ if len(radars)<10:
 
 out={
  "dataset":"GdjeSuKamere speed-camera locations",
+ "extractor_version":"3-safe-coordinates",
  "source":STARTS[0],
  "generated":datetime.now(timezone.utc).isoformat(),
  "count":len(radars),
