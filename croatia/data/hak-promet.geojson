@@ -1,21 +1,21 @@
 {
   "type": "FeatureCollection",
   "schema_version": 1,
-  "fetched_at": "2026-10-10T00:05:02.249587+00:00",
+  "fetched_at": "2026-10-10T05:42:55.324850+00:00",
   "source": "https://m.hak.hr/poi.asp?t=8987&tko=0",
   "source_map": "https://m.hak.hr/map.asp?t=8987&g=0",
   "source_category_counts": {
     "accident": 1,
-    "closed": 27,
-    "event": 17,
+    "closed": 29,
+    "event": 18,
     "queue": 1,
-    "roadworks": 72,
+    "roadworks": 73,
     "rocks": 2,
     "trucks": 7
   },
   "counts": {
-    "roadworks": 72,
-    "closed": 27
+    "roadworks": 73,
+    "closed": 29
   },
   "features": [
     {
@@ -95,7 +95,7 @@
         "id": "560629",
         "category": "closed",
         "title": "Zatvorena cesta",
-        "period_text": "12.01.26-11.10.26 01:05",
+        "period_text": "12.01.26-11.10.26 07:08",
         "urgent": false,
         "has_source_line": true,
         "source": "HAK",
@@ -347,7 +347,7 @@
         "id": "572424",
         "category": "roadworks",
         "title": "Radovi na cesti",
-        "period_text": "21.05.26-11.10.26 01:41",
+        "period_text": "21.05.26-11.10.26 06:43",
         "urgent": false,
         "has_source_line": true,
         "source": "HAK",
@@ -1448,6 +1448,27 @@
     },
     {
       "type": "Feature",
+      "id": "588468",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.9720287481803,
+          45.8127209825403
+        ]
+      },
+      "properties": {
+        "id": "588468",
+        "category": "closed",
+        "title": "Zatvorena cesta",
+        "period_text": "10.10.26-11.10.26",
+        "urgent": false,
+        "has_source_line": false,
+        "source": "HAK",
+        "source_url": "https://m.hak.hr/map.asp?t=8987&g=0"
+      }
+    },
+    {
+      "type": "Feature",
       "id": "588503",
       "geometry": {
         "type": "Point",
@@ -1712,7 +1733,7 @@
         "id": "589185",
         "category": "closed",
         "title": "Zatvorena cesta",
-        "period_text": "01.10.26-11.10.26 02:04",
+        "period_text": "01.10.26-11.10.26 07:42",
         "urgent": false,
         "has_source_line": false,
         "source": "HAK",
@@ -1973,6 +1994,27 @@
     },
     {
       "type": "Feature",
+      "id": "589758",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.9720342307816,
+          45.8124683614514
+        ]
+      },
+      "properties": {
+        "id": "589758",
+        "category": "closed",
+        "title": "Zatvorena cesta",
+        "period_text": "10.10.26 18:00",
+        "urgent": false,
+        "has_source_line": false,
+        "source": "HAK",
+        "source_url": "https://m.hak.hr/map.asp?t=8987&g=0"
+      }
+    },
+    {
+      "type": "Feature",
       "id": "589771",
       "geometry": {
         "type": "Point",
@@ -1985,7 +2027,7 @@
         "id": "589771",
         "category": "roadworks",
         "title": "Radovi na cesti",
-        "period_text": "07.10.26-11.10.26 01:05",
+        "period_text": "07.10.26-11.10.26 07:10",
         "urgent": false,
         "has_source_line": true,
         "source": "HAK",
@@ -2027,7 +2069,7 @@
         "id": "589803",
         "category": "roadworks",
         "title": "Radovi na cesti",
-        "period_text": "08.10.26-11.10.26 01:19",
+        "period_text": "08.10.26-11.10.26 07:22",
         "urgent": false,
         "has_source_line": true,
         "source": "HAK",
@@ -2093,6 +2135,27 @@
         "period_text": "09.10.26-11.10.26",
         "urgent": false,
         "has_source_line": true,
+        "source": "HAK",
+        "source_url": "https://m.hak.hr/map.asp?t=8987&g=0"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "590039",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.6848257104368,
+          43.5649608719197
+        ]
+      },
+      "properties": {
+        "id": "590039",
+        "category": "roadworks",
+        "title": "Radovi na cesti",
+        "period_text": "10.10.26-15.10.26",
+        "urgent": false,
+        "has_source_line": false,
         "source": "HAK",
         "source_url": "https://m.hak.hr/map.asp?t=8987&g=0"
       }
