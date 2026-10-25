@@ -1,8 +1,8 @@
 {
   "dataset": "GdjeSuKamere radar locations",
   "source": "https://www.darko-golner.com/projekti/gdjesukamere/load_locations_for_flutter.php",
-  "generated": "2026-10-24T08:05:37.993906+00:00",
-  "count": 1169,
+  "generated": "2026-10-25T08:22:48.467767+00:00",
+  "count": 1170,
   "radars": [
     {
       "id": 1,
@@ -8186,6 +8186,13 @@
       "longitude": 17.3432899470731,
       "location_name": "Gradac",
       "speed_limit": 60
+    },
+    {
+      "id": 22104,
+      "latitude": 45.97720443355874,
+      "longitude": 15.881588786317783,
+      "location_name": "Stubička Slatina",
+      "speed_limit": 50
     }
   ]
 }
