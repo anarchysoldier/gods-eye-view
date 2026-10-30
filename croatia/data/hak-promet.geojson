@@ -1,21 +1,20 @@
 {
   "type": "FeatureCollection",
   "schema_version": 1,
-  "fetched_at": "2026-10-30T20:11:27.785351+00:00",
+  "fetched_at": "2026-10-30T23:54:07.298152+00:00",
   "source": "https://m.hak.hr/poi.asp?t=8987&tko=0",
   "source_map": "https://m.hak.hr/map.asp?t=8987&g=0",
   "source_category_counts": {
-    "accident": 1,
     "closed": 26,
     "event": 22,
     "queue": 1,
-    "roadworks": 81,
+    "roadworks": 82,
     "rocks": 2,
     "trucks": 7,
-    "wind": 1
+    "wind": 2
   },
   "counts": {
-    "roadworks": 81,
+    "roadworks": 82,
     "closed": 26
   },
   "features": [
@@ -96,7 +95,7 @@
         "id": "560629",
         "category": "closed",
         "title": "Zatvorena cesta",
-        "period_text": "12.01.26-31.10.26 21:05",
+        "period_text": "12.01.26-01.11.26 00:07",
         "urgent": false,
         "has_source_line": true,
         "source": "HAK",
@@ -642,7 +641,7 @@
         "id": "586598",
         "category": "roadworks",
         "title": "Radovi na cesti",
-        "period_text": "10.09.26-31.10.26 20:17",
+        "period_text": "10.09.26-01.11.26 00:19",
         "urgent": false,
         "has_source_line": true,
         "source": "HAK",
@@ -831,7 +830,7 @@
         "id": "587572",
         "category": "roadworks",
         "title": "Radovi na cesti",
-        "period_text": "18.09.26-31.10.26 20:17",
+        "period_text": "18.09.26-01.11.26 00:19",
         "urgent": false,
         "has_source_line": true,
         "source": "HAK",
@@ -999,7 +998,7 @@
         "id": "588330",
         "category": "roadworks",
         "title": "Radovi na cesti",
-        "period_text": "21.09.26-31.10.26 20:31",
+        "period_text": "21.09.26-01.11.26 00:32",
         "urgent": false,
         "has_source_line": true,
         "source": "HAK",
@@ -1293,7 +1292,7 @@
         "id": "589688",
         "category": "roadworks",
         "title": "Radovi na cesti",
-        "period_text": "07.10.26-31.10.26 20:11",
+        "period_text": "07.10.26-01.11.26 00:14",
         "urgent": false,
         "has_source_line": true,
         "source": "HAK",
@@ -1776,7 +1775,7 @@
         "id": "591214",
         "category": "roadworks",
         "title": "Radovi na cesti",
-        "period_text": "20.10.26-31.10.26",
+        "period_text": "20.10.26-31.10.26 23:59",
         "urgent": false,
         "has_source_line": true,
         "source": "HAK",
@@ -1944,7 +1943,7 @@
         "id": "591736",
         "category": "roadworks",
         "title": "Radovi na cesti",
-        "period_text": "26.10.26-31.10.26 20:11",
+        "period_text": "26.10.26-01.11.26 00:14",
         "urgent": false,
         "has_source_line": false,
         "source": "HAK",
@@ -2049,7 +2048,7 @@
         "id": "591926",
         "category": "roadworks",
         "title": "Radovi na cesti",
-        "period_text": "28.10.26-31.10.26 20:17",
+        "period_text": "28.10.26-01.11.26 00:19",
         "urgent": false,
         "has_source_line": true,
         "source": "HAK",
@@ -2094,6 +2093,27 @@
         "period_text": "28.10.26-06.11.26",
         "urgent": false,
         "has_source_line": true,
+        "source": "HAK",
+        "source_url": "https://m.hak.hr/map.asp?t=8987&g=0"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "592005",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.899473668,
+          45.758957036
+        ]
+      },
+      "properties": {
+        "id": "592005",
+        "category": "roadworks",
+        "title": "Radovi na cesti",
+        "period_text": "31.10.26 06:00",
+        "urgent": false,
+        "has_source_line": false,
         "source": "HAK",
         "source_url": "https://m.hak.hr/map.asp?t=8987&g=0"
       }
@@ -2154,7 +2174,7 @@
         "id": "592103",
         "category": "roadworks",
         "title": "Radovi na cesti",
-        "period_text": "29.10.26-31.10.26 21:02",
+        "period_text": "29.10.26-01.11.26 00:03",
         "urgent": false,
         "has_source_line": true,
         "source": "HAK",
