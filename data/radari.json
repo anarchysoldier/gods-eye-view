@@ -1,8 +1,8 @@
 {
   "dataset": "GdjeSuKamere radar locations",
   "source": "https://www.darko-golner.com/projekti/gdjesukamere/load_locations_for_flutter.php",
-  "generated": "2026-11-01T10:24:50.196551+00:00",
-  "count": 1174,
+  "generated": "2026-11-02T10:59:00.938636+00:00",
+  "count": 1180,
   "radars": [
     {
       "id": 1,
@@ -8220,6 +8220,48 @@
       "latitude": 45.511233057474996,
       "longitude": 15.530099173789882,
       "location_name": "Karlovac - Drežnik",
+      "speed_limit": 50
+    },
+    {
+      "id": 22116,
+      "latitude": 45.26563212007366,
+      "longitude": 18.84801838970953,
+      "location_name": "Mirkovci - Ul. Dunavska",
+      "speed_limit": 50
+    },
+    {
+      "id": 22117,
+      "latitude": 45.28317880230647,
+      "longitude": 18.82325452424997,
+      "location_name": "Vinkovci - Brčanska ulica",
+      "speed_limit": 50
+    },
+    {
+      "id": 22118,
+      "latitude": 44.021745428485005,
+      "longitude": 15.586710744447325,
+      "location_name": "Šopot",
+      "speed_limit": 50
+    },
+    {
+      "id": 22119,
+      "latitude": 44.01498804069424,
+      "longitude": 15.594137794804327,
+      "location_name": "Šopot",
+      "speed_limit": 50
+    },
+    {
+      "id": 22120,
+      "latitude": 44.04518320697761,
+      "longitude": 15.616158684821908,
+      "location_name": "Benkovačko Selo",
+      "speed_limit": 50
+    },
+    {
+      "id": 22121,
+      "latitude": 44.033796217922344,
+      "longitude": 15.594239335962769,
+      "location_name": "Benkovac - Zadarska ulica",
       "speed_limit": 50
     }
   ]
