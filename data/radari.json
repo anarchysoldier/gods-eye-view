@@ -1,8 +1,8 @@
 {
   "dataset": "GdjeSuKamere radar locations",
   "source": "https://www.darko-golner.com/projekti/gdjesukamere/load_locations_for_flutter.php",
-  "generated": "2026-11-06T10:49:18.567367+00:00",
-  "count": 1180,
+  "generated": "2026-11-07T10:02:56.503869+00:00",
+  "count": 1183,
   "radars": [
     {
       "id": 1,
@@ -1017,13 +1017,6 @@
       "latitude": 45.74400265,
       "longitude": 17.82986181,
       "location_name": "Šaševo - Ulica Šaševo kod kbr. 9",
-      "speed_limit": 50
-    },
-    {
-      "id": 11026,
-      "latitude": 45.45806371,
-      "longitude": 15.5713564,
-      "location_name": "Turanj - cesta D1",
       "speed_limit": 50
     },
     {
@@ -3026,13 +3019,6 @@
       "latitude": 45.095685767206916,
       "longitude": 13.675969280997256,
       "location_name": "Rovinj - D303",
-      "speed_limit": 50
-    },
-    {
-      "id": 19922,
-      "latitude": 45.46557685299793,
-      "longitude": 15.577809031278727,
-      "location_name": "Karlovac - D1, Obilaznica Turnja",
       "speed_limit": 50
     },
     {
@@ -8262,6 +8248,41 @@
       "latitude": 44.033796217922344,
       "longitude": 15.594239335962769,
       "location_name": "Benkovac - Zadarska ulica",
+      "speed_limit": 50
+    },
+    {
+      "id": 22126,
+      "latitude": 45.459541,
+      "longitude": 15.560724,
+      "location_name": "Karlovac - Logorište",
+      "speed_limit": 50
+    },
+    {
+      "id": 22127,
+      "latitude": 45.474203,
+      "longitude": 15.544966,
+      "location_name": "Karlovac - Bašćinska cesta",
+      "speed_limit": 50
+    },
+    {
+      "id": 22128,
+      "latitude": 45.473161,
+      "longitude": 15.56,
+      "location_name": "Karlovac - Mostanje",
+      "speed_limit": 50
+    },
+    {
+      "id": 22129,
+      "latitude": 45.516885,
+      "longitude": 15.501912,
+      "location_name": "Karlovac - Mala Jelsa",
+      "speed_limit": 50
+    },
+    {
+      "id": 22132,
+      "latitude": 45.483338,
+      "longitude": 15.575999,
+      "location_name": "Karlovac - Mekušanska cesta",
       "speed_limit": 50
     }
   ]
