@@ -1,8 +1,8 @@
 {
   "dataset": "GdjeSuKamere radar locations",
   "source": "https://www.darko-golner.com/projekti/gdjesukamere/load_locations_for_flutter.php",
-  "generated": "2026-11-10T11:07:37.029977+00:00",
-  "count": 1184,
+  "generated": "2026-11-11T10:53:32.820704+00:00",
+  "count": 1186,
   "radars": [
     {
       "id": 1,
@@ -8291,6 +8291,20 @@
       "longitude": 15.581276212804065,
       "location_name": "Karlovac - Obilaznica Turnja",
       "speed_limit": 80
+    },
+    {
+      "id": 22145,
+      "latitude": 45.84850575941136,
+      "longitude": 15.811602301170522,
+      "location_name": "Zaprešić - Avenija hrvatskih branitelja",
+      "speed_limit": 50
+    },
+    {
+      "id": 22146,
+      "latitude": 45.90496332712613,
+      "longitude": 15.802467986184169,
+      "location_name": "Pojatno - Ul. Matije Gupca",
+      "speed_limit": 50
     }
   ]
 }
