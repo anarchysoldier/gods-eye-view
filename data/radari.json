@@ -1,8 +1,8 @@
 {
   "dataset": "GdjeSuKamere radar locations",
   "source": "https://www.darko-golner.com/projekti/gdjesukamere/load_locations_for_flutter.php",
-  "generated": "2026-11-18T11:37:11.607312+00:00",
-  "count": 1186,
+  "generated": "2026-11-20T11:33:42.068316+00:00",
+  "count": 1187,
   "radars": [
     {
       "id": 1,
@@ -8304,6 +8304,13 @@
       "latitude": 45.90496332712613,
       "longitude": 15.802467986184169,
       "location_name": "Pojatno - Ul. Matije Gupca",
+      "speed_limit": 50
+    },
+    {
+      "id": 22154,
+      "latitude": 45.391748081028666,
+      "longitude": 14.884156235136214,
+      "location_name": "Kupjak",
       "speed_limit": 50
     }
   ]
