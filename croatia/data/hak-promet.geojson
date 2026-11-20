@@ -1,20 +1,20 @@
 {
   "type": "FeatureCollection",
   "schema_version": 1,
-  "fetched_at": "2026-11-20T02:31:35.670733+00:00",
+  "fetched_at": "2026-11-20T10:23:34.556683+00:00",
   "source": "https://m.hak.hr/poi.asp?t=8987&tko=0",
   "source_map": "https://m.hak.hr/map.asp?t=8987&g=0",
   "source_category_counts": {
-    "closed": 24,
-    "event": 23,
+    "closed": 25,
+    "event": 24,
     "queue": 1,
-    "roadworks": 79,
+    "roadworks": 99,
     "rocks": 2,
     "trucks": 7
   },
   "counts": {
-    "roadworks": 79,
-    "closed": 24
+    "roadworks": 99,
+    "closed": 25
   },
   "features": [
     {
@@ -94,7 +94,7 @@
         "id": "560629",
         "category": "closed",
         "title": "Zatvorena cesta",
-        "period_text": "12.01.26-21.11.26 02:57",
+        "period_text": "12.01.26-21.11.26 11:01",
         "urgent": false,
         "has_source_line": true,
         "source": "HAK",
@@ -1648,7 +1648,7 @@
         "id": "592419",
         "category": "roadworks",
         "title": "Radovi na cesti",
-        "period_text": "02.11.26-21.11.26 03:23",
+        "period_text": "02.11.26-21.11.26 10:27",
         "urgent": false,
         "has_source_line": true,
         "source": "HAK",
@@ -1867,27 +1867,6 @@
     },
     {
       "type": "Feature",
-      "id": "593361",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          14.4929068669498,
-          45.3230766244
-        ]
-      },
-      "properties": {
-        "id": "593361",
-        "category": "roadworks",
-        "title": "Radovi na cesti",
-        "period_text": "16.11.26-20.11.26 04:00",
-        "urgent": false,
-        "has_source_line": false,
-        "source": "HAK",
-        "source_url": "https://m.hak.hr/map.asp?t=8987&g=0"
-      }
-    },
-    {
-      "type": "Feature",
       "id": "593380",
       "geometry": {
         "type": "Point",
@@ -2014,6 +1993,27 @@
     },
     {
       "type": "Feature",
+      "id": "593787",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.3242392619374,
+          45.824231971351
+        ]
+      },
+      "properties": {
+        "id": "593787",
+        "category": "closed",
+        "title": "Zatvorena cesta",
+        "period_text": "20.11.26-20.12.26",
+        "urgent": false,
+        "has_source_line": false,
+        "source": "HAK",
+        "source_url": "https://m.hak.hr/map.asp?t=8987&g=0"
+      }
+    },
+    {
+      "type": "Feature",
       "id": "593902",
       "geometry": {
         "type": "Point",
@@ -2110,7 +2110,7 @@
         "id": "593968",
         "category": "closed",
         "title": "Zatvorena cesta",
-        "period_text": "19.11.26-21.11.26 03:31",
+        "period_text": "19.11.26-21.11.26 11:23",
         "urgent": false,
         "has_source_line": false,
         "source": "HAK",
@@ -2161,19 +2161,460 @@
     },
     {
       "type": "Feature",
-      "id": "594019",
+      "id": "594055",
       "geometry": {
         "type": "Point",
         "coordinates": [
-          16.1173787,
-          45.7822044
+          16.1336499718032,
+          45.7968974884374
         ]
       },
       "properties": {
-        "id": "594019",
+        "id": "594055",
         "category": "roadworks",
         "title": "Radovi na cesti",
-        "period_text": "19.11.26-20.11.26 20:00",
+        "period_text": "20.11.26 18:00",
+        "urgent": false,
+        "has_source_line": false,
+        "source": "HAK",
+        "source_url": "https://m.hak.hr/map.asp?t=8987&g=0"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "594056",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.9670214889131,
+          45.3753454950072
+        ]
+      },
+      "properties": {
+        "id": "594056",
+        "category": "roadworks",
+        "title": "Radovi na cesti",
+        "period_text": "20.11.26 14:00",
+        "urgent": false,
+        "has_source_line": true,
+        "source": "HAK",
+        "source_url": "https://m.hak.hr/map.asp?t=8987&g=0"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "594057",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.7621456,
+          45.4579247
+        ]
+      },
+      "properties": {
+        "id": "594057",
+        "category": "roadworks",
+        "title": "Radovi na cesti",
+        "period_text": "20.11.26 18:00",
+        "urgent": false,
+        "has_source_line": true,
+        "source": "HAK",
+        "source_url": "https://m.hak.hr/map.asp?t=8987&g=0"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "594059",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.4290422938297,
+          45.4792836794484
+        ]
+      },
+      "properties": {
+        "id": "594059",
+        "category": "roadworks",
+        "title": "Radovi na cesti",
+        "period_text": "20.11.26 17:00",
+        "urgent": false,
+        "has_source_line": false,
+        "source": "HAK",
+        "source_url": "https://m.hak.hr/map.asp?t=8987&g=0"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "594060",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.0962211127655,
+          45.6277284949984
+        ]
+      },
+      "properties": {
+        "id": "594060",
+        "category": "roadworks",
+        "title": "Radovi na cesti",
+        "period_text": "20.11.26 18:00",
+        "urgent": false,
+        "has_source_line": true,
+        "source": "HAK",
+        "source_url": "https://m.hak.hr/map.asp?t=8987&g=0"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "594062",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.7542906,
+          45.4626443
+        ]
+      },
+      "properties": {
+        "id": "594062",
+        "category": "roadworks",
+        "title": "Radovi na cesti",
+        "period_text": "20.11.26 18:00",
+        "urgent": false,
+        "has_source_line": true,
+        "source": "HAK",
+        "source_url": "https://m.hak.hr/map.asp?t=8987&g=0"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "594063",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.0967055841426,
+          45.6264249949964
+        ]
+      },
+      "properties": {
+        "id": "594063",
+        "category": "roadworks",
+        "title": "Radovi na cesti",
+        "period_text": "20.11.26 18:00",
+        "urgent": false,
+        "has_source_line": true,
+        "source": "HAK",
+        "source_url": "https://m.hak.hr/map.asp?t=8987&g=0"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "594065",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.7651945,
+          45.4566906
+        ]
+      },
+      "properties": {
+        "id": "594065",
+        "category": "roadworks",
+        "title": "Radovi na cesti",
+        "period_text": "20.11.26 18:00",
+        "urgent": false,
+        "has_source_line": true,
+        "source": "HAK",
+        "source_url": "https://m.hak.hr/map.asp?t=8987&g=0"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "594066",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.4065270203999,
+          46.2103034949695
+        ]
+      },
+      "properties": {
+        "id": "594066",
+        "category": "roadworks",
+        "title": "Radovi na cesti",
+        "period_text": "20.11.26 18:00",
+        "urgent": false,
+        "has_source_line": true,
+        "source": "HAK",
+        "source_url": "https://m.hak.hr/map.asp?t=8987&g=0"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "594067",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.1287366,
+          45.2745834
+        ]
+      },
+      "properties": {
+        "id": "594067",
+        "category": "roadworks",
+        "title": "Radovi na cesti",
+        "period_text": "20.11.26 16:00",
+        "urgent": false,
+        "has_source_line": true,
+        "source": "HAK",
+        "source_url": "https://m.hak.hr/map.asp?t=8987&g=0"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "594069",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.8847313149601,
+          46.1298963949717
+        ]
+      },
+      "properties": {
+        "id": "594069",
+        "category": "roadworks",
+        "title": "Radovi na cesti",
+        "period_text": "21.11.26 08:42",
+        "urgent": false,
+        "has_source_line": true,
+        "source": "HAK",
+        "source_url": "https://m.hak.hr/map.asp?t=8987&g=0"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "594070",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.8448716755051,
+          46.2276126949677
+        ]
+      },
+      "properties": {
+        "id": "594070",
+        "category": "roadworks",
+        "title": "Radovi na cesti",
+        "period_text": "20.11.26-25.11.26",
+        "urgent": false,
+        "has_source_line": true,
+        "source": "HAK",
+        "source_url": "https://m.hak.hr/map.asp?t=8987&g=0"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "594071",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.6230285313781,
+          45.3994343699156
+        ]
+      },
+      "properties": {
+        "id": "594071",
+        "category": "roadworks",
+        "title": "Radovi na cesti",
+        "period_text": "20.11.26-21.11.26 10:43",
+        "urgent": false,
+        "has_source_line": true,
+        "source": "HAK",
+        "source_url": "https://m.hak.hr/map.asp?t=8987&g=0"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "594076",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.2867725325469,
+          45.994162694979
+        ]
+      },
+      "properties": {
+        "id": "594076",
+        "category": "roadworks",
+        "title": "Radovi na cesti",
+        "period_text": "20.11.26 18:00",
+        "urgent": false,
+        "has_source_line": true,
+        "source": "HAK",
+        "source_url": "https://m.hak.hr/map.asp?t=8987&g=0"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "594077",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.4035748,
+          45.6850489
+        ]
+      },
+      "properties": {
+        "id": "594077",
+        "category": "roadworks",
+        "title": "Radovi na cesti",
+        "period_text": "20.11.26 18:28",
+        "urgent": false,
+        "has_source_line": true,
+        "source": "HAK",
+        "source_url": "https://m.hak.hr/map.asp?t=8987&g=0"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "594078",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.9831581,
+          45.1802529
+        ]
+      },
+      "properties": {
+        "id": "594078",
+        "category": "roadworks",
+        "title": "Radovi na cesti",
+        "period_text": "20.11.26-18.12.26",
+        "urgent": false,
+        "has_source_line": true,
+        "source": "HAK",
+        "source_url": "https://m.hak.hr/map.asp?t=8987&g=0"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "594079",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8783640313397,
+          45.3756379
+        ]
+      },
+      "properties": {
+        "id": "594079",
+        "category": "roadworks",
+        "title": "Radovi na cesti",
+        "period_text": "20.11.26 16:00",
+        "urgent": false,
+        "has_source_line": true,
+        "source": "HAK",
+        "source_url": "https://m.hak.hr/map.asp?t=8987&g=0"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "594080",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.1065337465624,
+          45.6179234968797
+        ]
+      },
+      "properties": {
+        "id": "594080",
+        "category": "roadworks",
+        "title": "Radovi na cesti",
+        "period_text": "20.11.26 18:00",
+        "urgent": false,
+        "has_source_line": true,
+        "source": "HAK",
+        "source_url": "https://m.hak.hr/map.asp?t=8987&g=0"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "594081",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.1085842588884,
+          45.6172265949998
+        ]
+      },
+      "properties": {
+        "id": "594081",
+        "category": "roadworks",
+        "title": "Radovi na cesti",
+        "period_text": "20.11.26 18:00",
+        "urgent": false,
+        "has_source_line": true,
+        "source": "HAK",
+        "source_url": "https://m.hak.hr/map.asp?t=8987&g=0"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "594086",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.1337250762478,
+          45.7967996964811
+        ]
+      },
+      "properties": {
+        "id": "594086",
+        "category": "roadworks",
+        "title": "Radovi na cesti",
+        "period_text": "20.11.26 18:00",
+        "urgent": false,
+        "has_source_line": false,
+        "source": "HAK",
+        "source_url": "https://m.hak.hr/map.asp?t=8987&g=0"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "594088",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.6868555,
+          45.4917767
+        ]
+      },
+      "properties": {
+        "id": "594088",
+        "category": "roadworks",
+        "title": "Radovi na cesti",
+        "period_text": "20.11.26 18:00",
+        "urgent": false,
+        "has_source_line": true,
+        "source": "HAK",
+        "source_url": "https://m.hak.hr/map.asp?t=8987&g=0"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "594089",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.2622283443046,
+          43.2193578525362
+        ]
+      },
+      "properties": {
+        "id": "594089",
+        "category": "roadworks",
+        "title": "Radovi na cesti",
+        "period_text": "20.11.26 14:00",
         "urgent": false,
         "has_source_line": true,
         "source": "HAK",
