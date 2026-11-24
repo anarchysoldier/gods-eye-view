@@ -1,7 +1,7 @@
 {
   "dataset": "GdjeSuKamere radar locations",
   "source": "https://www.darko-golner.com/projekti/gdjesukamere/load_locations_for_flutter.php",
-  "generated": "2026-11-23T12:31:06.449564+00:00",
+  "generated": "2026-11-24T13:38:52.635961+00:00",
   "count": 1187,
   "radars": [
     {
